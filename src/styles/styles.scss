@@ -1,0 +1,17 @@
+.body {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  #app-content {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  #router-content {
+    flex: 1 0 auto;
+  }
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Didact Gothic', sans-serif;
+// font-family: 'Nanum Myeongjo', serif;
