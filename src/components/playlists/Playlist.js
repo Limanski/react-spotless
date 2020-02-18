@@ -4,8 +4,7 @@ import React from 'react'
 function Playlist() {
     return (
         <div>
-            Import Playlist from Spotify here
-            Maybe import Track(s) from Spotify here
+            Playlist and/or Tracks 
         </div>
     )
 }

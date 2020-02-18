@@ -2,11 +2,10 @@ import React from 'react'
 
 import SignInForm from '../components/auth/SignInForm'
 
-function SignIn() {
+function SignIn(props) {
     return (
         <div>
-            Sign In
-            <SignInForm />
+            <SignInForm {...props}/>
         </div>
     )
 }

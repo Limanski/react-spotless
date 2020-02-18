@@ -7,7 +7,6 @@ function PlaylistList() {
     return (
         <div className='container'>
             <div className='row'>
-                Playlist List
                 <PlaylistCard />
             </div>
         </div>
