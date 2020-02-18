@@ -5,8 +5,9 @@ function NoMatch() {
     return (
         <div>
             <div className="row">
-            <div className="center-align"><span className="flow-text, red-text">Error 404: You've found my apartment.</span></div>
-            <div className="center-align"><img src={SamsApt} alt="Sams Apt" height="300" width="300"/></div>
+            <div className="center-align"><span className="flow-text, red-text"><h2>Error 404:</h2></span></div>
+            <div className="center-align"><span className="flow-text, red-text"><h2>You've found my apartment.</h2></span></div>
+            <div className="center-align"><img src={SamsApt} alt="Sams Apt" height="500" width="500"/></div>
             </div>
         </div>
     );
