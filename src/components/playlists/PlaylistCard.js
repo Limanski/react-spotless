@@ -1,15 +1,34 @@
-import React from 'react'
-import Playlist from './Playlist'
+import React, { Component } from 'react'
+import { Card, Button } from 'semantic-ui-react'
+// import CreatePlaylistForm from './CreatePlaylistForm'
 
-function PlaylistCard() {
+
+const { playlist } = props
+
+class PlayListCard extends Component {
+    // const playlistList = playlists && playlists.map((playlist) =>
+    render() {
     return (
-        <div className="col s6">
-            <div className="card-panel teal">
-                <span className="white-text"><Playlist />
-                </span>
-            </div>
-      </div>
-    )
+        <div>
+            <Card key={playlist.id}>
+                <Card.Content>
+                    <Card.Header>{playlist.name}</Card.Header>
+                    <Card.Description>Created by {playlist.username}</Card.Description>
+                    <Card.Description>{playlist.tracks}</Card.Description>
+                </Card.Content>
+                <Card.Content buttons>
+                    <Button onClick={() => props.editPlaylist(playlist.id)}>Edit Playlist</Button>
+                    <Button onClick={() => props.deletePlaylist(playlist.id)}>Delete Playlist</Button>
+                </Card.Content>
+            </Card>
+        </div>
+    )}
+
+    // return (
+    //     <Card.Group centered>
+    //     { playlists }
+    //     </Card.Group>
+    // )
 }
 
-export default PlaylistCard
+export default PlayList

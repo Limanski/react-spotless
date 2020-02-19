@@ -1,12 +1,14 @@
-import React from 'react'
-import TrackCard from './TrackCard'
+import React, { Component } from 'react'
+// import { card, button } from 'semantic-ui-react'
+// import TrackCard from './TrackCard'
 
-function TrackList() {
+class TrackList extends Component {
+    render() {
     return (
         <div>
-             <TrackCard />
+             TrackCard
         </div>
-    )
+    )}
 }
 
 export default TrackList

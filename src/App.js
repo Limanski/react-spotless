@@ -3,14 +3,13 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from './screens/Home'
-import Playlists from './screens/Playlists'
+import CreatePlaylist from './screens/CreatePlaylist'
 import PlaylistDetail from './screens/PlaylistDetail'
 import Tracks from './screens/Tracks'
 import SignIn from './screens/SignIn'
 import SignUp from './screens/SignUp'
 import Account from './screens/Account'
 import NoMatch from './screens/NoMatch'
-
 import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
 
@@ -24,7 +23,7 @@ function App() {
 			<div id="router-content">
 				<Switch>
 					<Route exact path="/" component={Home} />
-					<Route exact path="/playlists" component={Playlists} />
+					<Route exact path="/playlists/create-playlist" component={CreatePlaylist} />
 					<Route path="/playlists/:playlistName" component={PlaylistDetail} />
 					<Route path="/tracks" component={Tracks} />
 					<Route path="/sign-in" component={SignIn} />

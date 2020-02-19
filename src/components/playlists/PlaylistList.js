@@ -1,16 +1,18 @@
 import React from 'react'
+import { Card, Button } from 'semantic-ui-react'
+
 import PlaylistCard from './PlaylistCard'
 
+function PlaylistList(props) {
+    console.log(props)
+    const { playlist } = props
 
-
-function PlaylistList() {
+    const playlistList = playlists && playlists.map((playlist) => {
     return (
-        <div className='container'>
-            <div className='row'>
-                <PlaylistCard />
-            </div>
+        <div>
+            xxx
         </div>
-    )
+    )}
 }
 
 export default PlaylistList

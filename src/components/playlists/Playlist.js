@@ -1,10 +1,11 @@
 import React from 'react'
-// import TrackCard from '../track/TrackCard'
+
+// const { playlist } = props
 
 function Playlist() {
     return (
         <div>
-            Playlist and/or Tracks 
+            
         </div>
     )
 }
