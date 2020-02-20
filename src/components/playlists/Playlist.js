@@ -27,7 +27,8 @@ class Playlist extends Component {
 
     getPlaylists = async () => {
         try {
-            const lists = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/playlists/`, { credentials: 'include' });
+            const lists = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/p
+            laylists/`, { credentials: 'include' });
             const parsedLists = await lists.json();
             console.log(parsedLists)
             this.setState({
