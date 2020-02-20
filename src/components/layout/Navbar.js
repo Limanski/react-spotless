@@ -1,5 +1,5 @@
 import React from 'react'
-const TrebleBass = require('../layout/images/trebleBass.png')
+const TrebleBass = require('./images/trebleBass.png')
 
 function Navbar() {
     return (
