@@ -5,7 +5,8 @@ class CreatePlaylistForm extends Component {
     state = {
         name: '',
         tracks: '',
-        created_by: 1
+        created_by: 1,
+        playlists: []
     }
 
     handleChange = e => {
@@ -26,7 +27,7 @@ class CreatePlaylistForm extends Component {
         e.preventDefault();
 
         try {
-            const createdPlaylistResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/playlists/`, {
+            const createdPlaylistResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/playlists/create`, {
                 method: 'POST',
                 body: JSON.stringify(newPlaylist),
                 headers: {
@@ -36,9 +37,9 @@ class CreatePlaylistForm extends Component {
             });
 
             const parsedResponse = await createdPlaylistResponse.json();
-
+            console.log(parsedResponse)
             this.setState({
-                playlists: [...this.state.palylists, parsedResponse.data]
+                playlists: [...this.state.playlists, parsedResponse.data]
             })
 
         } catch (err) {

@@ -1,18 +1,19 @@
 import React from 'react'
-import { Card, Button } from 'semantic-ui-react'
+// import { Card, Button } from 'semantic-ui-react'
 
+// import CreatePlaylistForm from '../playlists/CreatePlaylistForm'
 import PlaylistCard from './PlaylistCard'
+// import EditPlaylist from '../playlists/EditPlaylist'
 
 function PlaylistList(props) {
-    console.log(props)
-    const { playlist } = props
-
-    const playlistList = playlists && playlists.map((playlist) => {
+    // console.log(props)
+    const { playlists } = props
+    const allLists = playlists && playlists.map((playlist) => {
     return (
-        <div>
-            xxx
-        </div>
-    )}
+        <PlaylistCard playlist={playlist} deletePlaylist={props.deletePlaylist}/>
+    )})
+
+    return (allLists)
 }
 
 export default PlaylistList
