@@ -9,7 +9,7 @@ class SignInForm extends Component {
     signIn = async (payload) => {
         console.log(payload)
 
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/users/login`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/users/registration`, {
             method: 'POST',
             credentials: 'include',
             headers: {
