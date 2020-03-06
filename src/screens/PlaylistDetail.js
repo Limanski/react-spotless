@@ -1,9 +1,11 @@
 import React from 'react'
-
+import PlayList from '../components/playlists/Playlist'
 function PlaylistDetail() {
+    console.log('playlistdetail works')
     return (
         <div>
-            Playlist Detail
+            <PlayList />
+            
         </div>
     )
 }

@@ -12,7 +12,7 @@ class SignUpForm extends Component {
 
     registerNewUser = async (user) => {
         console.log('register hit', user)
-        const response = await fetch(`{process.env.REACT_APP_API_URL}/api/v1/playlists/`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/users/register`, {
             method: 'POST',
             credentials: 'include',
             headers: {

@@ -12,7 +12,6 @@ import Account from './screens/Account'
 import NoMatch from './screens/NoMatch'
 import Footer from './components/layout/Footer'
 import Navbar from './components/layout/Navbar'
-
 import './styles/styles.css'
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/playlists/create-playlist" component={CreatePlaylist} />
-					<Route path="/playlists/:playlistName" component={PlaylistDetail} />
+					<Route exact path="/playlists" component={PlaylistDetail} />
 					<Route path="/tracks" component={Tracks} />
 					<Route path="/sign-in" component={SignIn} />
 					<Route path="/sign-up" component={SignUp} />
